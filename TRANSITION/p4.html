@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transition Website</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff5722;
+}
+
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#timing-functions {
+    padding: 50px;
+    text-align: center;
+}
+
+#timing-functions h2 {
+    margin-bottom: 20px;
+}
+
+#timing-functions div {
+    display: inline-block;
+    /* margin: 10px;
+    padding: 20px;
+    width: 150px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.5s; */
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    background-color: darkgoldenrod;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#timing-functions div:hover {
+    transform: scale(1.2);
+    background-color: #ff5722;
+}
+
+
+.d1 {
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+
+.d2 {
+    transition: 2s;
+    transition-timing-function: ease-in;
+}
+
+.d3 {
+    transition: 2s;
+    transition-timing-function: ease-out;
+}
+
+.d4 {
+    transition: 2s;
+    transition-timing-function: ease;
+}
+
+.d5 {
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.d6 {
+    transition: 2s;
+    transition-timing-function: steps(4, start);
+}
+
+.d7 {
+    transition: 2s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><img src="https://static.vecteezy.com/system/resources/thumbnails/006/298/276/small_2x/gear-smart-eps-icon-digital-tech-business-logo-free-vector.jpg" alt="" style="width: 50px;height: 50px;"></h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <h2>Welcome to Our Tech Site</h2>
+        <p>Discover the latest in technology trends and insights.</p>
+    </section>
+
+    <section id="timing-functions">
+        <h2>Transition Timing Functions</h2>
+        <div class="d1">Linear</div>
+        <div class="d2">Ease-in</div>
+        <div class="d3">Ease-out</div>
+        <div class="d4">Ease</div>
+        <div class="d5">Ease-in-out</div>
+        <div class="d6">Steps (4, start)</div>
+        <div class="d7">Cubic-bezier(0.68, -0.55, 0.27, 1.55)</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tech Site. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
