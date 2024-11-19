@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 300px;
+            height: 300px;
+            background-color: darkgoldenrod;
+            padding: 30px;
+            border-radius: 20px;
+            margin: auto;
+            margin-bottom: 30px;
+            transition: 2s;
+        }
+        .scale:hover{
+            transform: scale(1.3);
+            /* transform: scale(0.6); */
+
+        }
+        .scaleX:hover{
+            transform: scaleX(2);
+        }
+        .scaleY:hover{
+            transform: scaleY(3);
+        }
+        .scaleZ:hover{
+            transform:scaleZ(2);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Scale</h2>
+    </center>
+    <hr>
+    <section class="scale">
+        <h1>Scale</h1>
+    </section>
+    <section class="scaleX">
+        <h1>Scale-X</h1>
+    </section>
+    <section class="scaleY">
+        <h1>Scale-Y</h1>
+    </section>
+    <!-- <section class="scaleZ">
+        <h1>Scale-Z</h1>
+    </section> -->
+</body>
+</html>
