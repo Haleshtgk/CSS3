@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+header img{
+    width: 100px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+header button{
+    border: none;
+    padding: 8px 20px;
+    background-color: rgb(43, 83, 43);
+    color: #fff;
+}
+
+/* p3.html  */
+.banner1{
+    background-color: #09261d;
+    display: flex;
+    padding: 4%;
+    align-items: center;
+}
+.banner1-left{
+    flex: 2;
+    color: #fff;
+}
+.banner1-right{
+    flex: 1;
+}
+.banner1-right img{
+    width: 100%;
+}
+.banner1-left .heading{
+    font-size: 4.5rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.banner1-left button{
+    border: none;
+    background-color: #fff;
+    color: #09261d;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* p4.html  */
+.banner2{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://assets.website-files.com/5e4b1929fccc7f2575de825e/5e4b1929fccc7fd4d0de82b2_photo-1439189741837-58720e8d82d5.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+.banner2 .banner2-content{
+    text-align: center;
+}
+.banner2-content .heading{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #000;
+}
+.banner2-content .subtitle{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+.banner2-content button{
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: orangered;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner2-content button:hover{
+    opacity: 0.8;
+}
